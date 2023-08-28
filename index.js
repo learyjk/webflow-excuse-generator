@@ -1,8 +1,18 @@
 const excuseButton = document.querySelector("#excuse-button");
 
 const generateExcuse = () => {
-  const who = ["The browser", "The Webflow editor"];
-  const action = ["misinterpreted", "conflicted with", "timed out on"];
+  const who = [
+    "The browser",
+    "The Webflow editor",
+    "A random plugin",
+    "My internet connection",
+  ];
+  const action = [
+    "misinterpreted",
+    "glitched on",
+    "conflicted with",
+    "timed out on",
+  ];
   const what = [
     "my responsive settings",
     "the custom code",
@@ -13,6 +23,8 @@ const generateExcuse = () => {
     "right before the demo",
     "during peak hours",
     "just as I hit publish",
+    "while I was syncing",
+    "when I least expected",
   ];
 
   const whoIndex = Math.floor(Math.random() * who.length);
